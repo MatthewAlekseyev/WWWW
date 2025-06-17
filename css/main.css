@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.wrapper {
+	background: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(74, 40, 0, 1) 100%
+	);
+	width: 100%;
+}
+
+.container {
+	width: 1500px;
+	margin: 0 auto;
+}
+
+header {
+	padding: 50px 0;
+}
+
+header .logo {
+	font-weight: 800;
+	font-size: 29px;
+	text-transform: uppercase;
+}
+
+header nav {
+	float: right;
+	width: 50%;
+}
+
+header nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	z-index: 2;
+	position: relative;
+}
+
+header nav ul li {
+	display: inline-block;
+}
+
+header nav ul li a {
+	color: white;
+}
+
+header nav ul li.active::after {
+	content: '';
+	display: block;
+	width: 40px;
+	height: 5px;
+	background: #fa9021;
+	border-radius: 10px;
+	position: relative;
+	top: 10px;
+	left: -15px;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+	border-bottom: 5px solid #dc7000;
+}
+
+header nav ul li.btn a {
+	background-color: #fa9021;
+	padding: 9px 17px;
+	border-radius: 5px;
+	transition: all 500ms ease;
+}
+
+header nav ul li.btn a:hover {
+	background: #dc7000;
+}
+
+.hero {
+	padding-bottom: 100px;
+	position: relative;
+	z-index: 1;
+}
+
+.hero--info {
+	width: 530px;
+	padding-top: 70px;
+}
+
+.hero h2 {
+	color: #dc7000;
+	font-size: 20px;
+	font-weight: 700;
+	padding-bottom: 10px;
+}
+
+.hero h1 {
+	font-size: 50px;
+	font-weight: 700;
+	padding-bottom: 10px;
+}
+
+.hero--info p {
+	font-size: 16px;
+	font-weight: 500;
+	padding-bottom: 30px;
+}
+
+.hero--info .btn {
+	background-color: #fa9021;
+	color: white;
+	padding: 15px 30px;
+	border-radius: 20px;
+	border: 0;
+	transition: all 500ms ease;
+	font-size: 17px;
+}
+
+.hero--info .btn:hover {
+	background: #dc7000;
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.hero img {
+	position: absolute;
+	top: -150px;
+	right: 0;
+}
+
+/*Игры под шапкой*/
+.trending {
+	padding-top: 100px;
+}
+
+.trending h3 {
+	font-size: 31px;
+	font-weight: 700;
+	margin-left: 50px;
+}
+
+.trending .see-all {
+	color: white;
+	background: #24201e;
+	border-radius: 5px;
+	padding: 12px 23px;
+	float: right;
+	display: block;
+	transition: all 500ms ease;
+}
+
+.trending .see-all:hover {
+	transform: scale(1.1);
+	background: black;
+}
+
+.trending .games {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 50px 0;
+	margin-left: 50px;
+}
+
+.trending .games span {
+	display: block;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.trending .games span img {
+	position: relative;
+	top: 5px;
+	margin-right: 7px;
+}
+
+.big-text {
+	color: white;
+	font-size: 35px;
+	font-weight: 700;
+	text-align: center;
+	width: 830px;
+	padding: 50px 0;
+}
+
+.banner {
+	padding: 80px 0;
+}
+
+.banner h3 {
+	font-size: 30px;
+	font-weight: 700;
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+.banner p {
+	font-size: 16px;
+	font-weight: 500;
+	text-align: left;
+	margin-bottom: 50px;
+	width: 545px;
+}
+
+.banner img {
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+/*Секция с img*/
+
+.features {
+	background: url('/img/mountains.svg') no-repeat center center fixed;
+	background-size: cover;
+	padding: 80px 0;
+}
+
+.features {
+  background-image: 
+    linear-gradient(rgba(14, 13, 13, 0.5)),
+    url('/img/mountains.svg');
+}
+
+.features .container h3 {
+	font-size: 30px;
+	font-weight: 700;
+	width: 830px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+	margin-bottom: 50px;
+}
+
+.features .container p {
+	font-size: 16px;
+	text-align: center;
+	width: 820px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.features .info {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+
+.features .info .block {
+	text-align: center;
+	width: 300px;
+	margin: 30px;
+}
+
+.block-inner {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.block-inner p {
+	margin: 0;
+}
+
+.projects {
+	background: linear-gradient(90deg,rgba(0, 0, 0, 1) 50%, rgba(74, 40, 0, 1) 100%);
+	width: 100%;
+	margin: 0;
+	padding: 0;	
+}
+
+.projects h3 {
+	display: flex;
+	justify-content: center;
+	padding-top: 90px;
+	font-size: 30px;
+	font-weight: 700;
+	margin: auto;
+	padding: auto;
+}
+
+.projects p {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 500;
+	padding-top: 30px;
+	width: 500px;
+	margin: auto;
+	padding: auto;
+}
+
+.projects .photo-container {
+	padding-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.projects .photo {
+	margin: 20px 18px;
+}
+
+.projects .btn {
+  border: none;
+  background-color: #24201e;
+  padding: 18px 21px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  transition: all 500ms ease;
+}
+
+.project-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects .btn:hover {
+	transform: scale(1.1);
+}
+
+.email h3 {
+	display: flex;
+	justify-content: left;
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+.email p {
+	display: flex;
+	text-align: left;
+	font-size: 16px;
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+}
+
+.email .block {
+	background: #1C140F;
+	margin-top: 30px;
+	border-radius: 15px;
+	padding: 40px 3%;
+	width: 94%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.email container {
+	
+}
