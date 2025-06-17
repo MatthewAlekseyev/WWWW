@@ -351,11 +351,3 @@ header nav ul li.btn a:hover {
 	margin-bottom: 30px;
 }
 
-.email p {
-	display: flex;
-	text-align: left;
-	font-size: 16px;
-	font-weight: 500;
-	margin: 0;
-	padding: 0;
-}
